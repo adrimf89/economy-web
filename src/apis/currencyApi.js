@@ -1,10 +1,10 @@
-import axios from 'axios';
+import axios from "axios";
 
-const KEY = 'd316e7006abaee61c97b';
+const KEY = process.env.REACT_APP_CURRENCY_KEY;
 
 export default axios.create({
-  baseURL: 'https://free.currconv.com/api/v7',
+  baseURL: "https://free.currconv.com/api/v7",
   params: {
-    apiKey: KEY
-  }
+    apiKey: KEY,
+  },
 });
